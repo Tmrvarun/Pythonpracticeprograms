@@ -1,0 +1,21 @@
+#significance of self: self is used as a pointer to point to the object argument passed
+
+#in the below code when we pass value of cpu and storage in the constructor then it gets stored in respective variable
+# the argument passed here are three , self - object, cpu storage
+# self.cpu,self.storage is used to point to com1 argument , so self differentiate for which parameter values are passed
+
+
+class computer:
+    def __init__(self,cpu,storage):
+        self.cpu=cpu
+        self.storage=storage
+
+    def show(self):
+        print(self.cpu,self.storage)
+
+
+com1=computer('i5','1 TB')
+com2=computer('AMD','10 TB')
+
+com1.show()
+com2.show()
